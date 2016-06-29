@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!-- href="">Link los estilos de webix</-->
+    <link rel="stylesheet" type="text/css" href="lib/webix/codebase/webix.css" />
+    <!-- href="">Link de angular</-->
+    <script type="text/javascript" src="lib/angular/angular.js"></script>
+    <!-- href="">Link de webix</-->
+    <script type="text/javascript" src="lib/webix/codebase/webix.js"></script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <script type="text/javascript" charset="utf-8">
+        webix.ui({
+            rows: [
+                {
+                    view: "template",
+                    type: "header", template: "My App!"
+                },
+                {
+                    view: "datatable",
+                    autoConfig: true,
+                    editable: true,
+                    data: {
+                        title: "My Fair Lady", year: 1964, votes: 533848, rating: 8.9, rank: 5
+                    }
+                }
+            ]
+        });
+    </script>
+</body>
+</html>
